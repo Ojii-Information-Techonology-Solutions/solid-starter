@@ -3,7 +3,7 @@ import { SidebarInset, SidebarProvider } from "~/components/ui/sidebar";
 import { AppSidebar } from "~/components/app-sidebar";
 import { BreadcrumbNav } from "~/components/breadcrumb-nav";
 
-export default function AuthenticatedLayout(props: { children: any }) {
+export default function Authenticated(props: { children: any }) {
   return (
     <SidebarProvider>
       <AppSidebar />

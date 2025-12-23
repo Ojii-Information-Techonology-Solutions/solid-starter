@@ -1,15 +1,27 @@
-export default function Home() {
+import LoginForm from "~/components/login-form";
+import { action, useAction } from "@solidjs/router";
+
+
+
+
+export default function MainIndex() {
+
   return (
-    <div>
-      <h1>Dashboard</h1>
-        <div class="flex flex-1 flex-col gap-4 p-4">
-          <div class="grid auto-rows-min gap-4 md:grid-cols-3">
-            <div class="aspect-video rounded-xl bg-muted/50" />
-            <div class="aspect-video rounded-xl bg-muted/50" />
-            <div class="aspect-video rounded-xl bg-muted/50" />
-          </div>
-          <div class="min-h-screen flex-1 rounded-xl bg-muted/50 md:min-h-min" />
+    <div class="flex min-h-[80vh] items-center justify-center px-4">
+      <div class="w-full max-w-md space-y-8 rounded-xl border bg-card p-8 shadow-lg">
+        <div class="text-center">
+          <h2 class="text-2xl font-bold tracking-tight text-foreground">Welcome back</h2>
+          <p class="text-sm text-muted-foreground">
+            Enter your credentials to access your account
+          </p>
         </div>
+        
+        {/* The component we just converted from Vue */}
+        <LoginForm />
+      </div>
+      <div>
+        {/* <button onClick={() => likePost()}>Like</button>; */}
+      </div>
     </div>
   );
 }

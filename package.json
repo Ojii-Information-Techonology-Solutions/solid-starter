@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vinxi dev",
     "build": "vinxi build",
-    "start": "vinxi start"
+    "start": "vinxi start",
+    "compile": "vinxi build && bun run "
   },
   "dependencies": {
     "@fontsource/inter": "^5.2.8",
@@ -23,8 +24,5 @@
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.18",
     "tailwindcss": "^4.1.18"
-  },
-  "engines": {
-    "node": ">=22"
   }
 }

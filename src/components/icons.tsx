@@ -418,6 +418,15 @@ export function IconEyeOff(props: IconProps) {
   )
 }
 
+export function IconEyeOn(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <path d="M12 12m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+      <path d="M3 12c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6z" />
+    </Icon>
+  )
+}
+
 export function IconFile(props: IconProps) {
   return (
     <Icon {...props}>
@@ -939,3 +948,4 @@ export function IconEvents(props: IconProps) {
     </Icon>
   )
 }
+
