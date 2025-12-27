@@ -11,7 +11,7 @@ import { IconLoader, IconBrandApple, IconBrandGoogle } from "~/components/icons"
 import { PasswordInput } from "~/components/password-input";
 import { useSubmission } from "@solidjs/router";
 import { Show } from "solid-js";
-import { loginAction } from "~/lib/auth-actions";
+import { loginAction } from "~/actions/login";
 
 export default  function LoginForm() {
   const [email, setEmail] = createSignal("demo@gmail.com");

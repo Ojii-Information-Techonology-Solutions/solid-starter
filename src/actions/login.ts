@@ -1,5 +1,5 @@
 import { action, redirect } from "@solidjs/router";
-import { useAuthSession } from "./session";
+import { useAuthSession } from "~/lib/session";
 
 export const loginAction = action(async (formData: FormData) => {
   "use server";

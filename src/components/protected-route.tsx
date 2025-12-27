@@ -1,6 +1,7 @@
 import { createAsync, useNavigate } from "@solidjs/router";
 import { createEffect, type JSX } from "solid-js";
 import { getAuthenticatedUser } from "~/lib/user";
+import LayoutSwitch from "./layout-switch";
 
 export default function ProtectedRoute(props: { children: JSX.Element }) {
   const userID = createAsync(() => getAuthenticatedUser());
@@ -12,5 +13,9 @@ export default function ProtectedRoute(props: { children: JSX.Element }) {
     }
   });
 
-  return props.children;
+  return (
+    <LayoutSwitch>
+      {props.children}
+    </LayoutSwitch>
+  );
 }

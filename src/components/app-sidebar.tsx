@@ -47,7 +47,7 @@ const menu = [
   {
     title: "General",
     items: [
-      { title: "Dashboard", link: "/", icon: IconDashboard },
+      { title: "Dashboard", link: "/dashboard", icon: IconDashboard },
       { title: "Events", link: "/events", icon: IconEvents },
       { title: "Venues", link: "/venues", icon: IconVenues },
       { title: "Tickets", link: "/tickets", icon: IconTicket },
@@ -82,7 +82,7 @@ const menu = [
   }, {
     title: "Identity",
     items: [
-      { title: "Login", link: "/auth/login", icon: IconLogin },
+      { title: "Login", link: "/", icon: IconLogin },
       { title: "Register", link: "/auth/register", icon: IconRegister },
       { title: "Forgot", link: "/auth/forgot", icon: IconForgotPassword },
       { title: "Verify", link: "/auth/verify", icon: IconVerifyEmail },

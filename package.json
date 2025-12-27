@@ -5,7 +5,8 @@
     "dev": "vinxi dev",
     "build": "vinxi build",
     "start": "vinxi start",
-    "compile": "vinxi build && bun run "
+    "compile": "vinxi build && bun run start"
+
   },
   "dependencies": {
     "@fontsource/inter": "^5.2.8",
@@ -13,8 +14,10 @@
     "@solidjs/meta": "^0.29.4",
     "@solidjs/router": "^0.15.4",
     "@solidjs/start": "^1.2.1",
+    "@thisbeyond/solid-dnd": "^0.7.5",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "nanoid": "^5.1.6",
     "solid-js": "^1.9.10",
     "solid-sonner": "^0.2.8",
     "tailwind-merge": "^3.4.0",
