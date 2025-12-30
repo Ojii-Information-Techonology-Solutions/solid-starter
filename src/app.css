@@ -48,6 +48,7 @@
   --color-error-foreground: hsl(var(--error-foreground));
 
   --color-ring: hsl(var(--ring));
+  
 
   /* 4. Border Radius */
   --radius-xl: calc(var(--radius) + 4px);
@@ -101,6 +102,16 @@
   }
 
   --animation-gradient-move: gradient-move 5s ease infinite;
+
+
+  --color-gold: #f59e0b;
+  --color-gold-glow: rgba(245, 158, 11, 0.3);
+  --color-void: #030303;
+
+  @keyframes reveal {
+    from { opacity: 0; transform: translateY(20px) skewY(2deg); }
+    to { opacity: 1; transform: translateY(0) skewY(0); }
+  }
 }
 
 /* 6. Raw HSL Values */
@@ -238,4 +249,9 @@
 .bg-brand { background-color: var(--brand-primary); transition: background-color 0.5s ease; }
 .text-brand { color: var(--brand-primary); transition: color 0.5s ease; }
 .border-brand { border-color: var(--brand-primary); transition: border-color 0.5s ease; }
+
+.stagger-item {
+  animation: reveal 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  opacity: 0;
+}
 
