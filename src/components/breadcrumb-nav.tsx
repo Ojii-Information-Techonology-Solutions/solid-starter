@@ -108,7 +108,7 @@ export function BreadcrumbNav() {
               <AvatarFallback>JD</AvatarFallback>
             </Avatar>
           </DropdownMenuTrigger>
-          <DropdownMenuContent class="w-56" align="end">
+          <DropdownMenuContent class="w-56">
             <DropdownMenuLabel>
               <div class="flex flex-col space-y-1">
                 <p class="text-sm font-medium leading-none">John Doe</p>

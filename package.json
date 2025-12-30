@@ -6,7 +6,6 @@
     "build": "vinxi build",
     "start": "vinxi start",
     "compile": "vinxi build && bun run start"
-
   },
   "dependencies": {
     "@fontsource/inter": "^5.2.8",
@@ -14,9 +13,12 @@
     "@solidjs/meta": "^0.29.4",
     "@solidjs/router": "^0.15.4",
     "@solidjs/start": "^1.2.1",
+    "@tanstack/solid-table": "^8.21.3",
     "@thisbeyond/solid-dnd": "^0.7.5",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "cmdk-solid": "^1.1.2",
+    "install": "^0.13.0",
     "nanoid": "^5.1.6",
     "solid-js": "^1.9.10",
     "solid-sonner": "^0.2.8",

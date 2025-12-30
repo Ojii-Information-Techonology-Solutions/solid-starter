@@ -48,6 +48,7 @@ const menu = [
     title: "General",
     items: [
       { title: "Dashboard", link: "/dashboard", icon: IconDashboard },
+      { title: "Tasks", link: "/tasks", icon: IconDashboard },
       { title: "Events", link: "/events", icon: IconEvents },
       { title: "Venues", link: "/venues", icon: IconVenues },
       { title: "Tickets", link: "/tickets", icon: IconTicket },

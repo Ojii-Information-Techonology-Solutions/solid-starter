@@ -92,6 +92,15 @@
   --color-sidebar-accent-foreground: hsl(var(--sidebar-accent-foreground));
   --color-sidebar-border: hsl(var(--sidebar-border));
   --color-sidebar-ring: hsl(var(--sidebar-ring));
+
+
+  @keyframes gradient-move {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  --animation-gradient-move: gradient-move 5s ease infinite;
 }
 
 /* 6. Raw HSL Values */
@@ -229,3 +238,4 @@
 .bg-brand { background-color: var(--brand-primary); transition: background-color 0.5s ease; }
 .text-brand { color: var(--brand-primary); transition: color 0.5s ease; }
 .border-brand { border-color: var(--brand-primary); transition: border-color 0.5s ease; }
+
