@@ -40,10 +40,21 @@ const menu = [
   {
     title: "Components",
     items: [
+      { title: "Avatar", link: "/components/avatar-demo", icon: IconComponents },
+      { title: "Badge", link: "/components/badge-demo", icon: IconComponents },
       { title: "Button", link: "/components/button-demo", icon: IconComponents },
       { title: "Card", link: "/components/card-demo", icon: IconCard },
+      { title: "Checkbox", link: "/components/checkbox-demo", icon: IconComponents },
       { title: "Dialog", link: "/components/dialog-demo", icon: IconComponents },
-      { title: "Sonner", link: "/components/sonner-demo", icon: IconComponents }
+      { title: "Dropdown Menu", link: "/components/dropdown-menu-demo", icon: IconComponents },
+      { title: "Form", link: "/components/form-demo", icon: IconComponents },
+      { title: "Select", link: "/components/select-demo", icon: IconComponents },
+      { title: "Sheet", link: "/components/sheet-demo", icon: IconComponents },
+      { title: "Skeleton", link: "/components/skeleton-demo", icon: IconComponents },
+      { title: "Sonner", link: "/components/sonner-demo", icon: IconComponents },
+      { title: "Table", link: "/components/table-demo", icon: IconComponents },
+      { title: "Timeline", link: "/components/timeline-demo", icon: IconComponents },
+      { title: "Tooltip", link: "/components/tooltip-demo", icon: IconComponents }
     ]
   }
 ];
