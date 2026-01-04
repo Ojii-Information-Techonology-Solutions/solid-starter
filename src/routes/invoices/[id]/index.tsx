@@ -1,7 +1,7 @@
 import { createAsync, useParams, useNavigate, A } from "@solidjs/router";
 import { createSignal, Show, For } from "solid-js";
 import ProtectedRoute from "~/components/protected-route";
-import { getInvoice, deleteInvoice } from "~/lib/db";
+import { getInvoice, deleteInvoice } from "~/actions/invoice";
 import { Button } from "~/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "~/components/ui/card";
 import { Badge } from "~/components/ui/badge";

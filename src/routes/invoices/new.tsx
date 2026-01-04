@@ -1,7 +1,7 @@
 import { createSignal, Index } from "solid-js";
 import { useNavigate } from "@solidjs/router";
 import ProtectedRoute from "~/components/protected-route";
-import { createInvoice } from "~/lib/db";
+import { createInvoice } from "~/actions/invoice";
 import { Button } from "~/components/ui/button";
 import { TextField, TextFieldInput, TextFieldLabel } from "~/components/ui/text-field";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "~/components/ui/card";

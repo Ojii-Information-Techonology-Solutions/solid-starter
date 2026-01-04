@@ -2,7 +2,7 @@ import { createAsync } from "@solidjs/router";
 import { For, Show, createSignal } from "solid-js";
 import { A } from "@solidjs/router";
 import ProtectedRoute from "~/components/protected-route";
-import { getInvoices, deleteInvoice } from "~/lib/db";
+import { getInvoices, deleteInvoice } from "~/actions/invoice";
 import { Button } from "~/components/ui/button";
 import {
   Table,

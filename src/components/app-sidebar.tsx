@@ -7,10 +7,6 @@ import {
   IconFile,
   IconSearch,
   IconComponents,
-  IconLogin,
-  IconRegister,
-  IconForgotPassword,
-  IconLogout,
   IconInvoice,
   IconKanban,
   IconCard
@@ -48,15 +44,6 @@ const menu = [
       { title: "Card", link: "/components/card-demo", icon: IconCard },
       { title: "Dialog", link: "/components/dialog-demo", icon: IconComponents },
       { title: "Sonner", link: "/components/sonner-demo", icon: IconComponents }
-    ]
-  },
-  {
-    title: "Auth",
-    items: [
-      { title: "Login", link: "/", icon: IconLogin },
-      { title: "Register", link: "/auth/register", icon: IconRegister },
-      { title: "Forgot Password", link: "/auth/forgot", icon: IconForgotPassword },
-      { title: "Logout", link: "/auth/logout", icon: IconLogout }
     ]
   }
 ];

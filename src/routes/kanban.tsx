@@ -29,7 +29,7 @@ import {
   SelectValue,
 } from '~/components/ui/select';
 import ProtectedRoute from '~/components/protected-route';
-import { getKanbanData, createKanbanTask, moveKanbanTask, deleteKanbanTask, type KanbanTaskInput } from '~/lib/db';
+import { getKanbanData, createKanbanTask, moveKanbanTask, deleteKanbanTask, type KanbanTaskInput } from '~/actions/kanban';
 import { toast } from 'solid-sonner';
 
 // Priority options for select
