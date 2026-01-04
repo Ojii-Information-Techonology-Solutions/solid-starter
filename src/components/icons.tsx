@@ -955,5 +955,34 @@ export function IconProfile(props: IconProps) {
       <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" />
     </Icon>
   )
+}
 
+export function IconInvoice(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+      <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+      <path d="M9 7l1 0" />
+      <path d="M9 13l6 0" />
+      <path d="M9 17l6 0" />
+    </Icon>
+  )
+}
+
+export function IconKanban(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <path d="M4 4h6v16h-6z" />
+      <path d="M14 4h6v10h-6z" />
+    </Icon>
+  )
+}
+
+export function IconCard(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <rect x="3" y="5" width="18" height="14" rx="2" />
+      <path d="M3 10h18" />
+    </Icon>
+  )
 }

@@ -1,31 +1,19 @@
 import { For, ComponentProps } from "solid-js";
 import { A, useLocation } from "@solidjs/router";
 
-// Import your custom icons
+// Import custom icons
 import {
   IconDashboard,
-  IconTicket,
   IconFile,
-  IconRocket,
-  IconDatabase,
-  IconDesktop,
-  IconZap,
-  IconSmile,
-  IconTerminal,
-  IconUpdates,
-  IconSettings,
   IconSearch,
   IconComponents,
   IconLogin,
   IconRegister,
   IconForgotPassword,
-  IconVerifyEmail,
-  IconOTP,
-  IconBiometrics,
   IconLogout,
-  IconFingerPrint,
-  IconEvents,
-  IconVenues
+  IconInvoice,
+  IconKanban,
+  IconCard
 } from '~/components/icons';
 
 import {
@@ -45,50 +33,29 @@ import { TeamSwitcher } from "./team-switcher";
 
 const menu = [
   {
-    title: "General",
+    title: "Main",
     items: [
       { title: "Dashboard", link: "/dashboard", icon: IconDashboard },
-      { title: "Tasks", link: "/tasks", icon: IconDashboard },
-      { title: "Events", link: "/events", icon: IconEvents },
-      { title: "Venues", link: "/venues", icon: IconVenues },
-      { title: "Tickets", link: "/tickets", icon: IconTicket },
-      { title: "Structure", link: "/structure", icon: IconFile }
-    ]
-  },
-  {
-    title: "Application",
-    items: [
-      { title: "Routing", link: "/routing", icon: IconRocket },
-      { title: "Data", link: "/data", icon: IconDatabase },
-      { title: "Rendering", link: "/rendering", icon: IconDesktop },
-      { title: "Caching", link: "/caching", icon: IconZap },
-      { title: "Styling", link: "/styling", icon: IconSmile }
-    ]
-  },
-  {
-    title: "Architecture",
-    items: [
-      { title: "CLI", link: "/cli", icon: IconTerminal },
-      { title: "Compiler", link: "/compiler", icon: IconUpdates },
-      { title: "Settings", link: "/settings", icon: IconSettings }
+      { title: "Tasks", link: "/tasks", icon: IconFile },
+      { title: "Kanban", link: "/kanban", icon: IconKanban },
+      { title: "Invoices", link: "/invoices", icon: IconInvoice }
     ]
   },
   {
     title: "Components",
     items: [
-      { title: "Sonner Demo", link: "/components/sonner-demo", icon: IconComponents },
-      { title: "Button Demo", link: "/components/button-demo", icon: IconUpdates },
-      { title: "Dialog Demo", link: "/components/dialog-demo", icon: IconSettings }
+      { title: "Button", link: "/components/button-demo", icon: IconComponents },
+      { title: "Card", link: "/components/card-demo", icon: IconCard },
+      { title: "Dialog", link: "/components/dialog-demo", icon: IconComponents },
+      { title: "Sonner", link: "/components/sonner-demo", icon: IconComponents }
     ]
-  }, {
-    title: "Identity",
+  },
+  {
+    title: "Auth",
     items: [
       { title: "Login", link: "/", icon: IconLogin },
       { title: "Register", link: "/auth/register", icon: IconRegister },
-      { title: "Forgot", link: "/auth/forgot", icon: IconForgotPassword },
-      { title: "Verify", link: "/auth/verify", icon: IconVerifyEmail },
-      { title: "OTP", link: "/auth/otp", icon: IconOTP },
-      { title: "Biometrics", link: "/auth/biometrics", icon: IconBiometrics },
+      { title: "Forgot Password", link: "/auth/forgot", icon: IconForgotPassword },
       { title: "Logout", link: "/auth/logout", icon: IconLogout }
     ]
   }
